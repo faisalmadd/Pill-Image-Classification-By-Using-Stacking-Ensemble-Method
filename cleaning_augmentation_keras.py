@@ -19,15 +19,9 @@ datagen = tf.keras.preprocessing.image.ImageDataGenerator(
     zoom_range=[0.8, 1.2]  # zoom range from 0.8 to 1.2
 )
 
-total_images_before_augmentation = 0
-total_images_after_augmentation = 0
-
 # Loop through each subfolder
 for subfolder in subfolders:
     class_images = [f.path for f in os.scandir(subfolder) if f.is_file() and f.name.endswith(('.png', '.jpg', '.jpeg'))]
-
-    # Count the number of images before augmentation
-    total_images_before_augmentation += len(class_images)
 
     # For each image in the subfolder
     for image_path in class_images:
@@ -50,10 +44,7 @@ for subfolder in subfolders:
             # Save the augmented image
             augmented_img_path = os.path.join(subfolder, 'augmented_' + os.path.basename(image_path))
             augmented_img_pil.save(augmented_img_path)
-            total_images_after_augmentation += 1
+            print(f'Augmented image saved at: {augmented_img_path}')
         else:
             print(f"Ignoring {image_path} as its file size is 0KB.")
 
-# Print the total number of images before and after augmentation
-print(f"Total images before augmentation: {total_images_before_augmentation}")
-print(f"Total images after augmentation: {total_images_after_augmentation}")
