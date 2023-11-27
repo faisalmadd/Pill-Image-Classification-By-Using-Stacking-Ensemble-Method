@@ -32,6 +32,7 @@ Based on the OSEMN framework by Hilary Mason and Chris Wiggins:
 - Obtain, Scrub, Explore, Model, and iNterpret
 
 The original model was translated to a more relevant format as below:
+
 ![image](https://github.com/faisalmadd/Pill-Image-Classification-By-Using-Stacking-Ensemble-Method/assets/84001348/6015ed49-384f-4bcf-997a-e0ade80fdf5a)
 
 Data Aquisition:
