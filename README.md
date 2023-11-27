@@ -5,9 +5,18 @@ Welcome to the Pill Image Classification By Using Stacking Ensemble Method Proje
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Methodology](#methodology)
-3. [Results and Discussion](#results-and-discussion)
-4. [Conclusion](#conclusion)
+    - [Problem Statement](#problem-statement)
+    - [Research Questions](#research-questions)
+    - [Research Objectives](#research-objectives)
+3. [Methodology](#methodology)
+    - [Data Aquisition](#data-aquisition)
+    - [Data Cleaning](#data-cleaning)
+    - [Model Training](#model-training)
+    - [Results and Evaluation](#results-and-evaluation)
+5. [Results and Discussion](#results-and-discussion)
+6. [Conclusion](#conclusion)
+    - [Research Contribution](#research-contribution)
+    - [Future Work](#future-work)
 
 
 ## Introduction
